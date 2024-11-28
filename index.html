@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1 class="grupp_14">Labb 1 Grupp 14</h1>
+      <form>
+        <!-- Input Field 1 -->
+        <div class="form-group">
+          <label for="color">Färg</label>
+          <input type="text" id="color" name="color" class="textfield" />
+        </div>
+
+        <!-- Input Field 2 -->
+        <div class="form-group">
+          <label for="content">Innehåll</label>
+          <input type="text" id="content" name="content" class="textfield" />
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+          <label for="divStyle">Stil på box</label>
+          <input
+            type="checkbox"
+            id="divStyle"
+            name="divStyle"
+            class="checkbox"
+          />
+        </div>
+
+        <!-- Button -->
+        <button type="button" id="removeButton">Ta bort</button>
+      </form>
+
+      <!-- Empty Div -->
+      <div class="div_empty" id="emptyDiv"></div>
+    </div>
+  </body>
+  <!-- script for js -->
+  <script src="script.js"></script>
+</html>
