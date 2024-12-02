@@ -1,17 +1,6 @@
-// Hämta en referens till checkbox-elementet genom att använda querySelector.
-// Detta söker efter ett element av typen <input> med attributet type='checkbox'.
 const divStyleCheckbox = document.querySelector("input[type='checkbox']");
-
-// Hämta alla textfält med klassen "textfield".
-// getElementsByClassName returnerar en HTMLCollection som är liknande en array.
 const textFields = document.getElementsByClassName("textfield");
-
-// Hämta den första knappen på sidan med querySelector.
-// Detta väljer det första <button>-elementet som finns i dokumentet.
 const removeButton = document.querySelector("button");
-
-// Hämta ett specifikt <div>-element med ID "emptyDiv".
-// getElementById används här för att snabbt få referensen till det elementet.
 const emptyDiv = document.getElementById("emptyDiv");
 
 // Funktion som hanterar inmatning i textfälten (Uppgift 5).
@@ -55,8 +44,8 @@ divStyleCheckbox.addEventListener("change", () => {
 // Lägg till en anonym funktion som eventlyssnare på knappen (Uppgift 6).
 removeButton.addEventListener("click", () => {
   // Ta bort div-elementet genom att ändra dess display till "none",
-  // vilket döljer det visuellt men lämnar det kvar i DOM-trädet.
-  emptyDiv.style.display = "none";
+  // vilket döljer det visuellt men tar bort den i DOM-trädet.
+  emptyDiv.remove();
 
   // Logga en bekräftelse på att div-elementet har tagits bort.
   console.log("Div-elementet har tagits bort.");
@@ -66,5 +55,5 @@ removeButton.addEventListener("click", () => {
 // Iterera genom HTMLCollection `textFields` med en for-loop.
 for (let i = 0; i < textFields.length; i++) {
   // Koppla eventlyssnaren `handleInputEvent` till "input"-eventet för varje textfält.
-  textFields[i].addEventListener("input", handleInputEvent);
+  textFields[i].addEventListener("blur", handleInputEvent);
 }
