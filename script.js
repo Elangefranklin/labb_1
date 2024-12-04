@@ -48,10 +48,9 @@ removeButton.addEventListener("click", () => {
   emptyDiv.remove();
 
   // Logga en bekräftelse på att div-elementet har tagits bort.
-  console.log("Div-elementet har tagits bort.");
+  console.log("Div-elementet har tagits bort från DOM-trädet.");
 });
 
-// Lägg till eventlyssnaren `handleInputEvent` på alla textfält (Uppgift 6).
 // Iterera genom HTMLCollection `textFields` med en for-loop.
 for (let i = 0; i < textFields.length; i++) {
   // Koppla eventlyssnaren `handleInputEvent` till "input"-eventet för varje textfält.
