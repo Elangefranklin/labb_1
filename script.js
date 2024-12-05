@@ -48,7 +48,7 @@ removeButton.addEventListener("click", () => {
   emptyDiv.remove();
 
   // Logga en bekräftelse på att div-elementet har tagits bort.
-  console.log("Div-elementet har tagits bort från DOM-trädet.");
+  console.log("Div-elementet: emptyDiv har tagits bort från DOM-trädet.");
 });
 
 // Iterera genom HTMLCollection `textFields` med en for-loop.
