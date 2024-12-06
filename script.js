@@ -1,3 +1,5 @@
+//Uppgift 4
+
 const divStyleCheckbox = document.querySelector("input[type='checkbox']");
 const textFields = document.getElementsByClassName("textfield");
 const removeButton = document.querySelector("button");
@@ -28,7 +30,7 @@ divStyleCheckbox.addEventListener("change", () => {
   // Iterera genom alla textfält för att hitta det som har name="color".
   for (let i = 0; i < textFields.length; i++) {
     if (textFields[i].name === "color") {
-      // Om fältet hittas, hämta dess värde och avsluta loopen.
+      // Om fältet hittas, hämta dess värde och sätts i variabeln och avsluta loopen.
       chosenColor = textFields[i].value;
       break;
     }
